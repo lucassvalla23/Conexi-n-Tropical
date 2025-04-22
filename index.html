@@ -46,22 +46,25 @@
       </div>
 
       <!-- Navegación normal -->
-      <ul id="nav-links" class="hidden sm:flex gap-6 text-lg font-medium">
-        <li class="hover:underline hover:opacity-80 cursor-pointer transition">Inicio</li>
-        <li class="hover:underline hover:opacity-80 cursor-pointer transition">Programación</li>
-        <li class="hover:underline hover:opacity-80 cursor-pointer transition">Nosotros</li>
-        <li class="hover:underline hover:opacity-80 cursor-pointer transition">Contacto</li>
-      </ul>
+      
+<ul id="nav-links" class="hidden sm:flex gap-6 text-lg font-medium">
+  <li><a href="#programacion" class="hover:underline hover:opacity-80 transition">Programación</a></li>
+  <li><a href="#nosotros" class="hover:underline hover:opacity-80 transition">Nosotros</a></li>
+  <li><a href="#contacto" class="hover:underline hover:opacity-80 transition">Contacto</a></li>
+</ul>
+
     </div>
 
     <!-- Menú colapsable en mobile -->
     <div id="mobile-menu" class="sm:hidden hidden px-6 pb-4">
-      <ul class="flex flex-col gap-3 text-base font-medium">
-        <li class="hover:underline cursor-pointer">Inicio</li>
-        <li class="hover:underline cursor-pointer">Programación</li>
-        <li class="hover:underline cursor-pointer">Nosotros</li>
-        <li class="hover:underline cursor-pointer">Contacto</li>
-      </ul>
+      
+<ul class="flex flex-col gap-3 text-base font-medium">
+  <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+  <li><a href="#programacion" class="hover:underline">Programación</a></li>
+  <li><a href="#nosotros" class="hover:underline">Nosotros</a></li>
+  <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+</ul>
+
     </div>
   </nav>
 
@@ -104,11 +107,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-green-50 text-center py-4 shadow-inner text-sm text-gray-600">
-    © 2025 Conexión Tropical 96.9 - Todos los derechos reservados.
-  </footer>
-
   <!-- Script para el menú hamburguesa -->
   <script>
     const toggle = document.getElementById('menu-toggle');
@@ -118,5 +116,63 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
+
+<!-- Sección Nosotros -->
+<section id="nosotros" class="max-w-4xl mx-auto px-6 py-16 text-center animate-fade-in">
+  <h2 class="text-3xl font-bold text-green-800 mb-4">Sobre Nosotros</h2>
+  <p class="text-gray-700 text-lg">
+    En Conexión Tropical 96.9 llevamos la pasión por la música tropical a cada rincón.
+    Somos una emisora local con espíritu alegre, comprometida con la cultura y el entretenimiento de nuestra comunidad.
+  </p>
+</section>
+
+<!-- Sección Programación -->
+<section id="programacion" class="max-w-3xl mx-auto px-6 py-12 animate-fade-in">
+  <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">Programación de Lunes a Viernes</h2>
+  <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-green-200">
+    <table class="min-w-full text-left text-sm sm:text-base">
+      <thead class="bg-green-100 text-green-800 font-semibold">
+        <tr>
+          <th class="px-4 py-3">Hora</th>
+          <th class="px-4 py-3">Programa</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-green-100">
+        <tr><td class="px-4 py-2">07:00</td><td class="px-4 py-2">La Pantera Rosa y sus Amigos</td></tr>
+        <tr><td class="px-4 py-2">08:00</td><td class="px-4 py-2">La Familia Ingalls</td></tr>
+        <tr><td class="px-4 py-2">09:00</td><td class="px-4 py-2">ALF</td></tr>
+        <tr><td class="px-4 py-2">10:00</td><td class="px-4 py-2">En Concierto</td></tr>
+        <tr><td class="px-4 py-2">12:00</td><td class="px-4 py-2">Deportes 5</td></tr>
+        <tr><td class="px-4 py-2">13:00</td><td class="px-4 py-2">Zona Retro</td></tr>
+        <tr><td class="px-4 py-2">15:00</td><td class="px-4 py-2">Nuestras Tardes</td></tr>
+        <tr><td class="px-4 py-2">16:00</td><td class="px-4 py-2">Brigada A / Loconautas TV</td></tr>
+        <tr><td class="px-4 py-2">17:00</td><td class="px-4 py-2">La Novela del Cinco</td></tr>
+        <tr><td class="px-4 py-2">18:00</td><td class="px-4 py-2">Ciudad Alcorta</td></tr>
+        <tr><td class="px-4 py-2">20:00</td><td class="px-4 py-2">La Familia Ingalls + Infoclima</td></tr>
+        <tr><td class="px-4 py-2">24:00</td><td class="px-4 py-2">Final de Transmisión</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="max-w-4xl mx-auto px-6 py-16 text-center animate-fade-in">
+  <h2 class="text-3xl font-bold text-green-800 mb-4">Contacto</h2>
+  <p class="text-gray-700 text-lg mb-6">
+    ¿Querés comunicarte con nosotros? Escribinos por redes sociales o por WhatsApp.
+  </p>
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+    <a href="https://wa.me/message/YOTUSNYKZOMVI1" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full transition">
+      Enviar WhatsApp
+    </a>
+    <a href="mailto:canal5delpueblo@gmail.com" class="text-green-700 underline hover:text-green-900">
+      canal5delpueblo@gmail.com
+    </a>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-green-50 text-center py-4 shadow-inner text-sm text-gray-600">
+  © 2025 Conexión Tropical 96.9 - Todos los derechos reservados.
+</footer>
 </body>
 </html>
