@@ -27,46 +27,45 @@
 </head>
 <body class="bg-gradient-to-br from-[#82cf62] via-green-100 to-white text-gray-900">
 
-  <!-- Navbar responsiva con menú hamburguesa -->
   <nav class="bg-[#82cf62] text-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      
       <!-- Logo y título -->
       <div class="flex items-center gap-3">
         <img src="img/logo.png" alt="Logo" class="h-10 w-auto"/>
         <h1 class="text-xl sm:text-2xl font-bold tracking-wide">Conexión Tropical 96.9</h1>
       </div>
+  
+      <!-- Botón hamburguesa visible y contrastante -->
+<div class="sm:hidden">
+  <button id="menu-toggle" class="focus:outline-none">
+    <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+</div>
 
-      <!-- Menú hamburguesa -->
-      <div class="sm:hidden">
-        <button id="menu-toggle" class="focus:outline-none">
-          <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
-            <path d="M4 5h16M4 12h16M4 19h16"/>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Navegación normal -->
-      
-<ul id="nav-links" class="hidden sm:flex gap-6 text-lg font-medium">
-  <li><a href="#programacion" class="hover:underline hover:opacity-80 transition">Programación</a></li>
-  <li><a href="#nosotros" class="hover:underline hover:opacity-80 transition">Nosotros</a></li>
-  <li><a href="#contacto" class="hover:underline hover:opacity-80 transition">Contacto</a></li>
-</ul>
-
+  
+      <!-- Menú escritorio -->
+      <ul id="nav-links" class="hidden sm:flex gap-6 text-lg font-medium">
+        <li><a href="programacion.html" class="hover:underline hover:opacity-80 transition">Programación</a></li>
+        <li><a href="#nosotros" class="hover:underline hover:opacity-80 transition">Nosotros</a></li>
+        <li><a href="#contacto" class="hover:underline hover:opacity-80 transition">Contacto</a></li>
+      </ul>
     </div>
-
-    <!-- Menú colapsable en mobile -->
-    <div id="mobile-menu" class="sm:hidden hidden px-6 pb-4">
-      
-<ul class="flex flex-col gap-3 text-base font-medium">
-  <li><a href="#inicio" class="hover:underline">Inicio</a></li>
-  <li><a href="#programacion" class="hover:underline">Programación</a></li>
-  <li><a href="#nosotros" class="hover:underline">Nosotros</a></li>
-  <li><a href="#contacto" class="hover:underline">Contacto</a></li>
-</ul>
-
+  
+    <!-- Menú móvil moderno -->
+    <div id="mobile-menu" class="sm:hidden hidden px-4 pb-4">
+      <ul class="bg-white rounded-xl shadow-xl text-green-900 font-medium text-base divide-y divide-gray-200">
+        <li><a href="programacion.html" class="block px-6 py-4 hover:bg-green-50 transition">📅 Programación</a></li>
+        <li><a href="#nosotros" class="block px-6 py-4 hover:bg-green-50 transition">📻 Nosotros</a></li>
+        <li><a href="#contacto" class="block px-6 py-4 hover:bg-green-50 transition">📞 Contacto</a></li>
+      </ul>
     </div>
   </nav>
+  
+  
+  
 
   <!-- Hero / Inicio -->
   <section class="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center space-y-8">
@@ -125,36 +124,6 @@
     Somos una emisora local con espíritu alegre, comprometida con la cultura y el entretenimiento de nuestra comunidad.
   </p>
 </section>
-
-<!-- Sección Programación -->
-<section id="programacion" class="max-w-3xl mx-auto px-6 py-12 animate-fade-in">
-  <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">Programación de Lunes a Viernes</h2>
-  <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-green-200">
-    <table class="min-w-full text-left text-sm sm:text-base">
-      <thead class="bg-green-100 text-green-800 font-semibold">
-        <tr>
-          <th class="px-4 py-3">Hora</th>
-          <th class="px-4 py-3">Programa</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-green-100">
-        <tr><td class="px-4 py-2">07:00</td><td class="px-4 py-2">La Pantera Rosa y sus Amigos</td></tr>
-        <tr><td class="px-4 py-2">08:00</td><td class="px-4 py-2">La Familia Ingalls</td></tr>
-        <tr><td class="px-4 py-2">09:00</td><td class="px-4 py-2">ALF</td></tr>
-        <tr><td class="px-4 py-2">10:00</td><td class="px-4 py-2">En Concierto</td></tr>
-        <tr><td class="px-4 py-2">12:00</td><td class="px-4 py-2">Deportes 5</td></tr>
-        <tr><td class="px-4 py-2">13:00</td><td class="px-4 py-2">Zona Retro</td></tr>
-        <tr><td class="px-4 py-2">15:00</td><td class="px-4 py-2">Nuestras Tardes</td></tr>
-        <tr><td class="px-4 py-2">16:00</td><td class="px-4 py-2">Brigada A / Loconautas TV</td></tr>
-        <tr><td class="px-4 py-2">17:00</td><td class="px-4 py-2">La Novela del Cinco</td></tr>
-        <tr><td class="px-4 py-2">18:00</td><td class="px-4 py-2">Ciudad Alcorta</td></tr>
-        <tr><td class="px-4 py-2">20:00</td><td class="px-4 py-2">La Familia Ingalls + Infoclima</td></tr>
-        <tr><td class="px-4 py-2">24:00</td><td class="px-4 py-2">Final de Transmisión</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
 <!-- Sección Contacto -->
 <section id="contacto" class="max-w-4xl mx-auto px-6 py-16 text-center animate-fade-in">
   <h2 class="text-3xl font-bold text-green-800 mb-4">Contacto</h2>
